@@ -6,7 +6,7 @@ exports.askBot = function(socket, data) {
 
 	//Lets configure and request
 	request({
-	    url: 'http://localhost:2001/chateo/reply', //URL to hit
+	    url: 'http://localhost:2001/BOTeo/reply', //URL to hit
 	    body: JSON.stringify({username: socket.username, message: data, vars: {name: socket.username}}),
 	    method: 'POST',
 	    headers: {
