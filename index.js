@@ -31,9 +31,10 @@ io.on('connection', function (socket) {
       username: socket.username,
       message: data
     });
-      if (socket.username != 'bot')
-      {
-	  bot.askBot(socket, data);
+    if (socket.username != 'bot')
+    {
+      ga('send', 'event', 'guess-chat', 'text', data);
+      bot.askBot(socket, data);
       }
   });
 
