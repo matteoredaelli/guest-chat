@@ -33,7 +33,7 @@ io.on('connection', function (socket) {
     });
     if (socket.username != 'bot')
     {
-      ga('send', 'event', 'guess-chat', 'text', data);
+      //ga('send', 'event', 'guess-chat', 'text', data);
       bot.askBot(socket, data);
       }
   });
